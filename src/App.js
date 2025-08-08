@@ -38,7 +38,7 @@ function App() {
     <div className="app">
       {error && <p>{error}</p>}
       {!forecast ? <p>Loading...</p> : (
-        <div className={\`weather-container \${getBackground(forecast.current.weather[0].main)}\`}>
+        <div className={`weather-container ${getBackground(forecast.current.weather[0].main)}`}>
           <h1>{location}</h1>
           <h2>Current: {forecast.current.temp}°C</h2>
           <h3>{forecast.current.weather[0].main}</h3>
