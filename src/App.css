@@ -1,0 +1,45 @@
+
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.weather-container {
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+}
+
+.sunny {
+  background-image: url('https://images.unsplash.com/photo-1501973801540-537f08ccae7b');
+}
+
+.rainy {
+  background-image: url('https://images.unsplash.com/photo-1527766833261-b09c3163a791');
+}
+
+.cloudy {
+  background-image: url('https://images.unsplash.com/photo-1542315192-1f61a1792f38');
+}
+
+.snowy {
+  background-image: url('https://images.unsplash.com/photo-1608889175123-17e2e1ecae6e');
+}
+
+.forecast {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.day {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  min-width: 100px;
+}
