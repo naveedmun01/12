@@ -13,8 +13,8 @@ function App() {
     const fetchWeather = async () => {
       try {
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/onecall?lat=40.7128&lon=-74.0060&exclude=minutely,hourly,alerts&units=metric&appid=${API_KEY}`
-        );
+          `https://api.openweathermap.org/data/3.0/onecall?lat=40.7128&lon=-74.0060&exclude=minutely,hourly,alerts&units=metric&appid=${API_KEY}`
+         );
         setForecast(response.data);
       } catch (err) {
         setError('Failed to fetch weather data');
