@@ -16,7 +16,7 @@ function App() {
         try {
           const res = await axios.get(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,alerts&units=metric&appid=${API_KEY}`);
           setForecast(res.data);
-          const locRes = await axios.get(\`https://api.openweathermap.org/data/2.5/weather?lat=\${latitude}&lon=\${longitude}&appid=\${API_KEY}\`);
+          const locRes = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}`);
           setLocation(locRes.data.name);
         } catch (err) {
           setError("Failed to fetch forecast.");
